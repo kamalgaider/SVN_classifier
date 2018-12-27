@@ -2,7 +2,6 @@
 import numpy as np
 from matplotlib import pyplot as plt
 
-
 def svn_set_weights(X,Y):
 
 	#Weights
@@ -26,8 +25,6 @@ def svn_set_weights(X,Y):
 	return w
 
 
-
-
 def main():
 
 	#input data points in the form : [ x, y, bias/weight ]
@@ -44,7 +41,6 @@ def main():
 
 	#Calling method to get optimum weight(used to generate hyperplane)
 	w = svn_set_weights(X,Y)
-	
 
 	#plot the input points on 2D graph
 	for d, x in enumerate(X):
@@ -68,7 +64,6 @@ def main():
 	plt.xlabel('X-cordinate')
 	plt.ylabel('Y-cordinate')
 	plt.show()
-
 
 if __name__ == '__main__':
 	main()
